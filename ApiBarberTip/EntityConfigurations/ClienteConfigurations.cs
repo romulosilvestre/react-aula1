@@ -2,6 +2,7 @@ using BarberTip.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
+namespace BarberTip.EntityConfigurations;
 public class ClienteConfigurations : IEntityTypeConfiguration<Cliente>
 {
     public void Configure(EntityTypeBuilder<Cliente> builder)
@@ -13,13 +14,14 @@ public class ClienteConfigurations : IEntityTypeConfiguration<Cliente>
                .HasMaxLength(60);
         builder.Property(a=>a.Telefone)
                .IsRequired()
-               .HasMaxLength(60);
+               .HasMaxLength(11);
         builder.Property(a=>a.Email)
                .IsRequired()
                .HasMaxLength(60);
         builder.Property(a=>a.DataNascimento)
-               .IsRequired()
-               .HasMaxLength(60);
+               .IsRequired(); //Data não tem tamanho porque é uma estrutura (struct)
+               //DateTime = Struct
+               
     
     }
 }
