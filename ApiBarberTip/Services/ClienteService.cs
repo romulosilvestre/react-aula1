@@ -30,5 +30,12 @@ public class ClienteService{
         );
     }
 
+    public IEnumerable<ListarClienteViewModel> ListarClientes(){
+         
+         return _context.Clientes.Select(c=> new ListarClienteViewModel(c.Id,c.Nome,c.Telefone));
+
+    }
+    
+
 
 }
