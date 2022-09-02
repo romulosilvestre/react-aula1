@@ -1,4 +1,5 @@
 using BarberTip.Contexts;
+using BarberTip.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BarberTipContext>();
+builder.Services.AddTransient<ClienteService>();
 
 
 var app = builder.Build();
