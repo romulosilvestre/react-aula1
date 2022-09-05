@@ -32,6 +32,30 @@ public class ClienteController:ControllerBase{
           return Ok(cliente);
     } 
 
+    [HttpGet]
+    public IActionResult ListarClientes(){
+        return Ok(_clienteService.ListarClientes());
+    }
+
+    [HttpPut("{id}")]
+    public IActionResult AtualizarCliente(int id,AtualizarClienteViewModel dados){
+
+
+
+        if(id != dados.Id){
+            return BadRequest("o id informado na URL é diferente do corpo da requisição");
+        }
+        var cliente = _clienteService.AtualizarCliente(dados);
+        return Ok(cliente);
+    }
+    [HttpDelete("{id}")]
+    public IActionResult ExluirCliente(int id){
+        _clienteService.ExcluirCliente(id);
+        return NoContent(); //204
+    }
+
+    
+
 }
 
 
