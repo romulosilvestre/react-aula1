@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9KVqOmRtftdpwxc/9u7cv7GhvXvffbJrYr+nXF75ns5TolOmC91nFvyU6d+Oy1JfgHXwqU5wo85Xx2fjvQIV+Q==",
+  "dgSpecHash": "8zydNsCUdmb8OwzRs4jZtENJD7KDAQULDbBrhtA7FKiBBK9SnmICb8vLnIf3xxMVndQ4LDwK7KgBxImDWVZeRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\romulo.leite\\Desktop\\ApiBarberTip\\ApiBarberTip.csproj",
+  "projectFilePath": "C:\\Users\\romulo.leite\\desktop\\ApiBarberTip\\ApiBarberTip.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\romulo.leite\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -36,6 +36,14 @@ public class ClienteController:ControllerBase{
     public IActionResult ListarClientes(){
         return Ok(_clienteService.ListarClientes());
     }
+    [HttpGet("{id}")]
+    public IActionResult ListarClientePeloId(int id){
+        var cliente = _clienteService.ListarClientePeloId(id);
+        if(cliente!=null){
+            return Ok(cliente);
+        }         
+        return NotFound();//Esse é o 404
+    }
 
     [HttpPut("{id}")]
     public IActionResult AtualizarCliente(int id,AtualizarClienteViewModel dados){
