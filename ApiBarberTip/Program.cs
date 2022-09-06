@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BarberTipContext>();
 builder.Services.AddTransient<ClienteService>();
-
+builder.Services.AddTransient<AgendamentoService>();
 
 var app = builder.Build();
 

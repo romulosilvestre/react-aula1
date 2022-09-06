@@ -19,6 +19,8 @@ public class Cliente{
 
      public DateTime DataNascimento { get; set; }
 
+     public ICollection<Agendamento> Agendamentos { get; set; }
+
 
 
 }
