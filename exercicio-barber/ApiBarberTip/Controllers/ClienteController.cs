@@ -47,9 +47,6 @@ public class ClienteController:ControllerBase{
 
     [HttpPut("{id}")]
     public IActionResult AtualizarCliente(int id,AtualizarClienteViewModel dados){
-
-
-
         if(id != dados.Id){
             return BadRequest("o id informado na URL é diferente do corpo da requisição");
         }

@@ -28,6 +28,28 @@ public class AgendamentoService{
     }
     public DetalhesAgendamentoViewModel? ListarAgendamentoPeloId(int id){
         
+        var agendamento = _context.Agendamentos.Include(c=>c.Cliente)
+                                               .FirstOrDefault(a=>a.Id == id);
+        if(agendamento!=null){
+
+            var resultado = new DetalhesAgendamentoViewModel(
+                agendamento.Id,
+                agendamento.Data,
+                agendamento.Hora,
+                agendamento.IdCliente
+            );
+           /* resultado.Cliente = new DetalhesClienteViewModel(
+
+                  
+          
+             
+                            
+            
+
+            );*/
+           return resultado;
+
+        }
         return null;
 
     }
