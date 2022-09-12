@@ -15,12 +15,8 @@ public class AgendamentoConfigurations : IEntityTypeConfiguration<Agendamento>
 
         builder.Property(a=>a.Hora)
                .IsRequired(); //Realizar Manutenção
+        
 
-        builder.HasOne(a=>a.Cliente)
-               .WithMany(c=>c.Agendamentos)
-               .HasForeignKey(a=>a.IdCliente);
-
-               //Depois a turma vai fazer o de Serviço-Funcionário
-                       
+                                    
     }
 }

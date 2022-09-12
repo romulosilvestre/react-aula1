@@ -21,7 +21,10 @@ public class ClienteConfigurations : IEntityTypeConfiguration<Cliente>
         builder.Property(a=>a.DataNascimento)
                .IsRequired(); //Data não tem tamanho porque é uma estrutura (struct)
                //DateTime = Struct
-               
+               //Relacionamento
+        builder.HasMany(c=>c.Agendamentos)
+               .WithOne(a=>a.Cliente)
+               .HasForeignKey(a=>a.IdCliente);       
     
     }
 }
