@@ -22,6 +22,10 @@ public class AgendamentoController:ControllerBase{
         return Ok(agendamento); //Status Http 200.
 
     }
+    [HttpGet]
+    public IActionResult ListarAgendamentos(int idCliente){
+        return Ok(_agendamentoService.ListarAgendamentos(idCliente));
+    }
 
 
 

@@ -11,6 +11,6 @@ public class AdicionarAgendamentoViewModel{
 
     public DateTime Data { get; set; }
     public DateTime Hora { get; set; }
-    public int IdCliente { get; set; }
+    public int IdCliente { get; set; }  
     
 }
