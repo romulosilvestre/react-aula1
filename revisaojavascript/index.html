@@ -1,0 +1,50 @@
+<!--index.html é a página principal-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão JavaScript</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <script src="js/script.js"></script>
+</head>
+<body> 
+    <h1 id="titulo"></h1>  
+    <!--componente menu-->
+    <!--o JSX é um HTML criado pela empresa Meta para não conflitar com o JS-->
+    <nav class="menu">
+        <ul>
+             <a href="#">Manter Cliente</a>
+             <a href="#">Manter Agendamento</a>
+             <a href="#">Manter Funcionário</a>
+             <a href="#"
+             <a href="#">Verificar Logs do Sistema</a>
+
+        </ul>
+    </nav>
+
+    <script>
+         //usando para o navegador ou node
+         console.log("Ambientação JavaScript -BT")
+         alert("Projeto Integrador - SENAC")
+         //var    const  let
+         //Este é um comentário de uma linha
+         /*
+           Comentário múltiplas linhas...    
+         */
+         var nomeCliente = prompt("Qual é o seu nome?")
+         alert("Olá: "+nomeCliente);
+         var salario = Number(prompt("Qual o salário?"))
+         const bolsa=400;
+         const salTotal = salario+bolsa;
+         alert(salTotal)
+         alert(typeof(salTotal))
+         alert(typeof(nomeCliente))
+         
+    </script>
+    
+</body>
+</html>
