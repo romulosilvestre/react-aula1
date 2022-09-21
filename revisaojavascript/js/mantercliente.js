@@ -2,14 +2,14 @@
 //DOM
 const frm = document.querySelector("form")
 const resp = document.querySelector("h3")
-
 //cria um "ouvinte" de evento, 
 //acionado quando o botão submit for clicado
-const dataNasc = document.querySelector("form").inData.value
+
 frm.addEventListener("submit",(e)=>{
     const nome = frm.inNome.value
     const telefone = frm.inTelefone.value
     const email = frm.inEmail.value
+    const dataNasc = frm.inData.value
     resp.innerText = `Olá ${nome} 
              seu telefone é:${telefone} 
              e o email:${email}
@@ -17,3 +17,7 @@ frm.addEventListener("submit",(e)=>{
     e.preventDefault()//evitar o envio do form.
 })
 
+//innerText
+//innerHTML
+//operadores aritméticos e lógicos
+//if , for e vetores e matrizes
