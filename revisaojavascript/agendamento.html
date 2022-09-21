@@ -11,16 +11,25 @@
 <body>
 
     <form>
-        Cabeleleiro
-        <select name="select">
-            <option value="valor1">Cleiton</option>
-            <option value="valor2" selected>Redil homem</option>
-            <option value="valor3">Samuca cabra macho</option>
-        </select>
-        ID Cliente <input type="text" disabled>
-        Data <input type="date">
+       Escolha o Profissional <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Cleiton">
+          <option value="Samuel">
+          <option value="Wanderson">
+          <option value="Everson">
+          <option value="Reuildeions">
+        </datalist>
+        
+        Data Inicio <input type="date">
+        Data Fim <input type="date">
         Hora <input type="time">
-        <input type="submit">
+        <input type="submit" value="pesquisar"><br>
+        <input type="checkbox" id="seg" name="seg" value="seg">
+        <label for="vehicle1"> segunda</label><br>
+        <input type="checkbox" id="ter" name="ter" value="ter">
+        <label for="vehicle2"> terça</label><br>
+        <input type="checkbox" id="qua" name="qua" value="qua">
+        <label for="vehicle2"> quarta</label><br>
     </form>
 
 
