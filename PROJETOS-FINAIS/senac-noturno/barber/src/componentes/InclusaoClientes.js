@@ -1,4 +1,10 @@
+import {userForm} from "react-hook-form";
+
+
 const InclusaoClientes=()=>{
+   //register serve para definir os nomes dos campos do form(e validações)
+   //handSubmit, serve para indicar o método a ser acionado no evento onSubmit do form
+    
    return(       
          <div className="container">
              <h4 className="fst-italic mt-3">Inclusão</h4>
